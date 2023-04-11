@@ -9,20 +9,34 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-function splitFirstAndLastNames(str) {
+const splitFirstAndLastNames = (str) => {
+    console.log(str.split(' '));
+
   return str.split(' ');
 }
-
+splitFirstAndLastNames('John Smith');
 
 /** =========================
  * The personAge() constant is assigned to a function, that takes an object of person Data as the argument.
  * The function returns the value of the age property of the argument object
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
+const myObject = {
+  name: 'Charles',
+  age: 27,
+  city: 'Bahston'
+};
 
-const personAge = function(personObject) {
-  return personObject.age;
+const personAge = (personObject) => {
+    console.log(personObject.age);
+    return personObject.age;
 }
+
+personAge(myObject);
+
+/*const personAge = function(personObject) {
+    return personObject.age;
+}*/
 
 
 /** =========================
@@ -33,7 +47,9 @@ const personAge = function(personObject) {
  */
 
 const isNameInArray = function(arr, name) {
-  return arr.includes(name);
+  if(arr.includes = name) {
+    return arr.includes(name);
+  }
 }
 
 
